@@ -17,11 +17,120 @@ body {
 }
 
 
+.meet-div {
+  position: relative;
+  height: 20vh; /* Adjust the height as needed */
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* Set text color to contrast with the background */
+  background-image: url(https://image.dream.snhu.edu/lib/fe9213737460007973/m/1/12801768-e416-4e88-b895-ed159e4c34ea.jpg);
+}
+
+.meet-div::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $ink-blue;
+  opacity: 0.8;/* Adjust the overlay color and transparency */
+  z-index: 1; /* Ensure the overlay is above the background image */
+}
+
+/* Add additional styling for your content within the meet-div if needed */
+.meet-div h1 {
+  margin: 0;
+  padding: 20px;
+  z-index: 2; /* Ensure the content is above the overlay */
+}
 
 
+// .main {
+  //   background: linear-gradient(#fdbb13d2 15rem, #fff 15rem), url('https://image.dream.snhu.edu/lib/fe9213737460007973/m/1/107abdea-a7fc-41f1-a3e4-b2b854b79465.jpg');
+  //   background-size: 100% 100%, contain; /* Adjust background-size as needed */
+  //   background-position: 91% calc(-462%);
+  // }
+  
+  .intro-banner {
+    background: linear-gradient(rgba(253, 187, 19, 0.8), rgba(253, 187, 19, 0.8)), url('https://image.dream.snhu.edu/lib/fe9213737460007973/m/1/107abdea-a7fc-41f1-a3e4-b2b854b79465.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+  .bd-example {
+    padding: 2.5rem;
+    margin-right: 0;
+    margin-left: 0;
+    border-width: 1px;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    box-shadow: 0 2px 8px;
+    border-radius: 9px;
+  }
 
+  .form-whole {
+    transform: none;
+  }
+  .form-group {
+    margin-bottom: 1rem !important;
+  }
+  
+  .discount {
+    background: linear-gradient(#fff 6rem, $hero-blue 6rem);
+    position: relative;
+  }
   
   
+  
+  
+  .complete-btn {
+    background-color: $ink-blue !important;
+    color: #fff !important;
+  }
+  
+  .accordion-btn-content {
+    font-weight: bolder;
+  }
+  
+  .clock-icon1 {
+    width: 6%;
+  }
+  
+  
+  
+  .max-hh {
+    max-height: none;
+  }
+  
+  .vidyard-player-container {
+    width: 100% !important;
+  }
+
+  
+  @media screen and (min-width: 770px) {
+    
+    .form-whole {
+      transform: translate(10px, -14rem);
+    }
+    
+    .max-hh {
+      max-height: 45rem;
+    }
+    
+    .vidyard-player-container {
+      width: 80% !important;
+    }
+  }
+  
+  @media screen and (min-width: 990px) {
+ 
+   .max-hh {
+     max-height: 35rem;
+   }
+ 
+ 
+  }
   
  
   

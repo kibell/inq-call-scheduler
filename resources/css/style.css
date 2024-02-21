@@ -163,13 +163,9 @@ $font-size-7xl: 4rem; /*64px */
 /* 36px */
 /* 40px  h1 tag* /
 $font-size-7xl: 4rem; /*64px */
-section {
-  margin: 5rem 0 5rem 0;
-}
-
 h1 {
   color: #0a3370;
-  font-size: 2.5rem;
+  font-size: 48px;
   font-weight: bold;
   font-family: "Oswald", sans-serif;
 }
@@ -178,7 +174,7 @@ h2 {
   margin-bottom: 1.5rem;
   color: #00244e;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 36px;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -190,7 +186,7 @@ h3 {
 }
 
 p,
-li {
+li, label {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -226,11 +222,6 @@ a {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 576px) {
-  section {
-    margin: 2.5rem 0 2.5rem 0;
-  }
-}
 /* Font size */
 /* 18px */
 /*20 px*/
@@ -290,9 +281,39 @@ footer.mobile {
 }
 
 .navbar {
-  background-color: #00244e;
+  background: rgb(0, 36, 78);
+  background: linear-gradient(180deg, rgb(0, 36, 78) 44%, rgb(255, 255, 255) 44%);
+  justify-content: center;
 }
 
+@media only screen and (min-width: 628px) {
+  .navbar {
+    background: rgb(0, 36, 78);
+    background: linear-gradient(127deg, rgb(0, 36, 78) 64%, rgb(255, 255, 255) 64%);
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 630px) {
+  .navbar {
+    background: rgb(0, 36, 78);
+    background: linear-gradient(127deg, rgb(0, 36, 78) 56%, rgb(255, 255, 255) 56%);
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .navbar {
+    justify-content: space-between;
+    background: rgb(0, 36, 78);
+    background: linear-gradient(127deg, rgb(0, 36, 78) 71%, rgb(255, 255, 255) 71%);
+  }
+}
+@media only screen and (min-width: 1360px) {
+  .navbar {
+    justify-content: space-between;
+    background: rgb(0, 36, 78);
+    background: linear-gradient(127deg, rgb(0, 36, 78) 77%, rgb(255, 255, 255) 77%);
+  }
+}
 @media only screen and (max-width: 576px) {
   .navbar > .container {
     justify-content: center;
@@ -322,13 +343,9 @@ footer.mobile {
 /* 36px */
 /* 40px  h1 tag* /
 $font-size-7xl: 4rem; /*64px */
-section {
-  margin: 5rem 0 5rem 0;
-}
-
 h1 {
   color: #0a3370;
-  font-size: 2.5rem;
+  font-size: 48px;
   font-weight: bold;
   font-family: "Oswald", sans-serif;
 }
@@ -337,7 +354,7 @@ h2 {
   margin-bottom: 1.5rem;
   color: #00244e;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 36px;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -349,7 +366,7 @@ h3 {
 }
 
 p,
-li {
+li, label {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -385,11 +402,103 @@ a {
   text-decoration: none;
 }
 
-@media only screen and (max-width: 576px) {
-  section {
-    margin: 2.5rem 0 2.5rem 0;
-  }
-}
 body {
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.meet-div {
+  position: relative;
+  height: 20vh; /* Adjust the height as needed */
+  background-size: cover;
+  background-position: center;
+  color: #fff; /* Set text color to contrast with the background */
+  background-image: url(https://image.dream.snhu.edu/lib/fe9213737460007973/m/1/12801768-e416-4e88-b895-ed159e4c34ea.jpg);
+}
+
+.meet-div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00244e;
+  opacity: 0.8; /* Adjust the overlay color and transparency */
+  z-index: 1; /* Ensure the overlay is above the background image */
+}
+
+/* Add additional styling for your content within the meet-div if needed */
+.meet-div h1 {
+  margin: 0;
+  padding: 20px;
+  z-index: 2; /* Ensure the content is above the overlay */
+}
+
+.intro-banner {
+  background: linear-gradient(rgba(253, 187, 19, 0.8), rgba(253, 187, 19, 0.8)), url("https://image.dream.snhu.edu/lib/fe9213737460007973/m/1/107abdea-a7fc-41f1-a3e4-b2b854b79465.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.bd-example {
+  padding: 2.5rem;
+  margin-right: 0;
+  margin-left: 0;
+  border-width: 1px;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  box-shadow: 0 2px 8px;
+  border-radius: 9px;
+}
+
+.form-whole {
+  transform: none;
+}
+
+.form-group {
+  margin-bottom: 1rem !important;
+}
+
+.discount {
+  background: linear-gradient(#fff 6rem, #2066a2 6rem);
+  position: relative;
+}
+
+.complete-btn {
+  background-color: #00244e !important;
+  color: #fff !important;
+}
+
+.accordion-btn-content {
+  font-weight: bolder;
+}
+
+.clock-icon1 {
+  width: 6%;
+}
+
+.max-hh {
+  max-height: none;
+}
+
+.vidyard-player-container {
+  width: 100% !important;
+}
+
+@media screen and (min-width: 770px) {
+  .form-whole {
+    transform: translate(10px, -14rem);
+  }
+  .max-hh {
+    max-height: 45rem;
+  }
+  .vidyard-player-container {
+    width: 80% !important;
+  }
+}
+@media screen and (min-width: 990px) {
+  .max-hh {
+    max-height: 35rem;
+  }
 }/*# sourceMappingURL=style.css.map */

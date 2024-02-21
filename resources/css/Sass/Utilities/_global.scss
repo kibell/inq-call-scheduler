@@ -1,14 +1,10 @@
 @import "../Utilities/themes";
 @import "../Utilities/variables";
 
-section {
-  margin: 5rem 0 5rem 0;
-}
-
 
 h1 {
   color: $heritage;
-  font-size: $font-size-6xl;
+  font-size: 48px;
   font-weight: bold;
   font-family: $oswald;
 }
@@ -17,7 +13,7 @@ h2 {
   margin-bottom: 1.5rem;
   color: $ink-blue;
   font-weight: 700; 
-  font-size: $font-size-2xl;
+  font-size: 36px;
   font-family: $open-sans;
 }
 
@@ -30,7 +26,7 @@ h3 {
 }
 
 p,
-li {
+li, label {
   font-family: $open-sans;
   font-size: $font-size-md;
   font-weight: 400;
@@ -63,14 +59,4 @@ a {
 color: $heritage;
 font-weight: 700;
 text-decoration: none;
-}
-
-@media only screen and (max-width: $breakpoint-sm) { 
-
-  section {
-    margin: 2.5rem 0 2.5rem 0;
-  }
-
-  
-
 }

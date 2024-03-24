@@ -3,45 +3,9 @@
 
  .navbar {
   background: rgb(0,36,78);
-  background: linear-gradient(180deg, rgba(0,36,78,1) 44%, rgba(255,255,255,1) 44%);
-  justify-content: center;
   }
 
 
-  @media only screen and (min-width: 628px) {
-    .navbar {
-      background: rgb(0,36,78);
-      background: linear-gradient(127deg, rgba(0,36,78,1) 64%, rgba(255,255,255,1) 64%);
-      justify-content: space-between;
-      }
-
-  }
-
-  @media only screen and (min-width: 630px) {
-    .navbar {
-      background: rgb(0,36,78);
-      background: linear-gradient(127deg, rgba(0,36,78,1) 56%, rgba(255,255,255,1) 56%);
-      justify-content: space-between;
-      }
-
-  }
-
-  @media only screen and (min-width: 1200px) {
-    .navbar {
-      justify-content: space-between;
-      background: rgb(0,36,78);
-      background: linear-gradient(127deg, rgba(0,36,78,1) 71%, rgba(255,255,255,1) 71%);
-    }
-  }
-
-
-  @media only screen and (min-width: 1360px) {
-    .navbar {
-      justify-content: space-between;
-      background: rgb(0,36,78);
-      background: linear-gradient(127deg, rgba(0,36,78,1) 77%, rgba(255,255,255,1) 77%);
-    }
-  }
 
 
 

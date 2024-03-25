@@ -143,28 +143,8 @@ $font-size-7xl: 4rem; /*64px */
   background: #F9F9F9;
 }
 
-.ink-blue {
-  color: #00244e;
-}
-
-.heritage {
-  color: #0a3370;
-}
-
-.bg-lightgray {
-  background: #F9F9F9;
-}
-
-/* Font size */
-/* 18px */
-/*20 px*/
-/*24px h2 tag */
-/* 32px */
-/* 36px */
-/* 40px  h1 tag* /
-$font-size-7xl: 4rem; /*64px */
 h1 {
-  color: #0a3370;
+  color: #00244e;
   font-size: 48px;
   font-weight: bold;
   font-family: "Oswald", sans-serif;
@@ -293,28 +273,8 @@ footer.mobile {
     flex-direction: row;
   }
 }
-.ink-blue {
-  color: #00244e;
-}
-
-.heritage {
-  color: #0a3370;
-}
-
-.bg-lightgray {
-  background: #F9F9F9;
-}
-
-/* Font size */
-/* 18px */
-/*20 px*/
-/*24px h2 tag */
-/* 32px */
-/* 36px */
-/* 40px  h1 tag* /
-$font-size-7xl: 4rem; /*64px */
 h1 {
-  color: #0a3370;
+  color: #00244e;
   font-size: 48px;
   font-weight: bold;
   font-family: "Oswald", sans-serif;
@@ -407,6 +367,10 @@ body {
   margin-top: 5rem;
   color: #00244e;
   border-radius: 9px;
+}
+
+.bg-lb ul li, .bg-lb p {
+  color: #00244e;
 }
 
 .hd-5 {
